@@ -1,11 +1,11 @@
 # このフォルダのプログラムについて
 
-このフォルダのプログラム(main.ipynb)は、<br>
+このフォルダのプログラム(main.ipynb)は、langchainライブラリーで<br>
 
 - Embeddingと文章生成のLLMとしてAWS Bedrockのモデル<br>
 - ベクトルDBとしてChroma<br>
 
-をlangchainライブラリーを用いてシンプルなRAGを実装したものです。
+を用いてシンプルなRAGを実装したものです。
 
 ## 概要
 
