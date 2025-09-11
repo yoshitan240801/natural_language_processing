@@ -1,6 +1,8 @@
 # このフォルダのプログラムについて
 
-このフォルダのmainプログラム(main.ipynb)は、claudeのtool_useでstructured outputを行って、音声通話テキストの自然文を構造化データにします。
+このフォルダのmainプログラム(main.ipynb)は、claudeのtool_useでstructured outputを行って、音声通話テキストの自然文を構造化データにします。<br>
+　(boto3バージョン： 1.40.21)<br>
+　(pandasバージョン： 2.3.0)
 
 ## 概要
 
