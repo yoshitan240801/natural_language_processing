@@ -7,13 +7,13 @@
 
 ## 概要
 
-![図1](./slide_01.png)
+![図1](./work/slide_01.png)
 
-![図2](./mermaid_image.png)
+![図2](./work/mermaid_image.png)
 
-![図3](./slide_02.png)
+![図3](./work/slide_02.png)
 
-![図4](./slide_03.png)
+![図4](./work/slide_03.png)
 
 
 ## 詳細
@@ -38,4 +38,4 @@
 3. E列(reason_of_achievement)
 4. F列(satisfaction_score)
 
-![図5](./screenshot_01.png)
+![図5](./work/screenshot_01.png)
