@@ -22,7 +22,7 @@
 
 ```mermaid
 graph TB
-    A[入力データ (ミニバッチ数, 時系列数, 埋め込み次元数)] --> 
+    A[入力データ<br>ミニバッチ数, 時系列数, 埋め込み次元数] --> 
     B[Positional Encoding層 (ミニバッチ数, 時系列数, 埋め込み次元数)]
     B --> C[Multihead Self Attention層 (ミニバッチ数, 時系列数, 埋め込み次元数)]
     C --> D[FeedForward層 (ミニバッチ数, 時系列数, 埋め込み次元数)]
