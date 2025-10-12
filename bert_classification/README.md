@@ -22,7 +22,7 @@
 
 ```mermaid
 graph TB
-    A[***入力データ***<br>ミニバッチ数, 時系列数, 埋め込み次元数] --> 
+    A[入力データ<br>ミニバッチ数, 時系列数, 埋め込み次元数] --> 
     B[Positional Encoding層<br>ミニバッチ数, 時系列数, 埋め込み次元数]
     B --> C[Multihead Self Attention層<br>ミニバッチ数, 時系列数, 埋め込み次元数]
     C --> D[FeedForward層<br>ミニバッチ数, 時系列数, 埋め込み次元数]
@@ -42,5 +42,6 @@ graph TB
 そして、これをsqueezeする事で、<br>
 &nbsp;&nbsp;&nbsp;&nbsp;(ミニバッチ数, 埋め込み次元数)<br>
 となり、このテンソルが出力的な文章表現として、出力層に渡される。
+
 
 
