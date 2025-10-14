@@ -8,6 +8,56 @@
 &nbsp;(datasets： 3.5.0)<br>
 
 
+---
+
+# プログラムの全体フロー
+
+```mermaid
+graph TD
+    A[データセット取得<br/>HuggingFace] --> B[データ前処理<br/>5%抽出・シャッフル]
+    B --> C[トークン化<br/>東北大BERT]
+    C --> D[学習前推論<br/>ベースライン評価]
+    D --> E[Fine-Tuning学習<br/>3エポック]
+    E --> F[モデル保存]
+    F --> G[学習後推論<br/>精度比較]
+```
+
+**目的**: 日本語感情分類(positive/neutral/negative)のFine-Tuning
+
+---
+
+# データ準備・学習・評価
+
+## データセットとトークン化
+- **データ**: `tyqiangz/multilingual-sentiments` (日本語) の5%を使用
+- **ラベル**: 3クラス (positive / neutral / negative)
+- **トークナイザー**: `cl-tohoku/bert-base-japanese-whole-word-masking`
+
+## Fine-Tuning学習
+- **エポック数**: 3 / **ミニバッチ**: 32 / **学習率**: 2e-5
+- **評価指標**: Accuracy / Precision / Recall / F1-Score
+
+## 推論と比較
+- **学習前**: ベースライン性能を測定
+- **学習後**: 保存したモデルで再推論し、Accuracy向上を検証
+
+---
+
+# まとめ
+
+## 実装内容
+1. **データ取得**: HuggingFaceから日本語感情分析データセット
+2. **前処理**: データ削減(5%)、シャッフル、ラベル変換
+3. **トークン化**: 東北大BERTトークナイザーで変換
+4. **学習前評価**: ベースライン性能の測定
+5. **Fine-Tuning**: 3エポックの学習実行
+6. **モデル保存**: 重み・設定・トークナイザーを保存
+7. **学習後評価**: 精度向上の検証
+
+**結果**: Fine-Tuning前後のAccuracy比較により効果を検証
+
+---
+
 # 補足(BERTのデータ形状(shape)の流れ)
 
 ## 【前提】
