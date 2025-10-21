@@ -9,6 +9,7 @@
 ## 🔧 使用技術
 
 - **Amazon Bedrock**（AWS 上の LLM アクセス）
+- **Amazon Nova（AWS）**（大規模言語モデル）
 - **Claude（Anthropic）**（大規模言語モデル）
 - **ChromaDB**（軽量なベクトルデータベース）
 - **LangChain**（LLM 構成フレームワーク）
@@ -22,15 +23,17 @@
 
 | ディレクトリ名 | 概要 |
 |----------------|------|
+| [`amazon-nova_usecase`](./amazon-nova_usecase) | Amazon Nova を使った文章分類 |
 | [`aws_bedrock`](./aws_bedrock) | Amazon Bedrock を使ったプロンプトエンジニアリングの基礎 |
 | [`bedrock_chroma_simple_rag`](./bedrock_chroma_simple_rag) | Chroma + Claude によるシンプルな RAG パイプライン |
 | [`bert_classification`](./bert_classification) | Transformersを用いたBERTの文章分類のファインチューニング |
 | [`claude_gradio_app`](./claude_gradio_app) | Claude を活用した Gradio ベースのチャットアプリ |
 | [`claude_structured_output_usecase`](./claude_structured_output_usecase) | Claude を使った JSON 形式の構造化出力例 |
-| [`claude_structured_output_usecase_2`](./claude_structured_output_usecase_2) | より高度な構造化出力ユースケースの実装 |
+| [`claude_structured_output_usecase_2`](./claude_structured_output_usecase_2) | Claude を使った JSON 形式の構造化出力例2 |
 | [`rinna-gpt2_generate`](./rinna-gpt2_generate) | Transformersを用いたGPT2の文章生成のファインチューニング |
 | [`t5_summarize`](./t5_summarize) | Transformersを用いたT5の文章要約のファインチューニング |
 
 
 ---
+
 
